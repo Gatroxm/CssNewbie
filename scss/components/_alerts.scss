@@ -1,0 +1,67 @@
+@import "../utils/colors";
+@import "../utils/resolutions";
+
+.alert{
+	width: 100%;
+	height: auto;
+	padding: 5px 15px;
+	margin: 10px auto;
+	background-color: #fff;
+	border-radius: 5px;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid;
+	font-size: 15px;
+    font-weight: bold;
+	color: #fff;
+	-webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+	&.alert-default{
+		background-color: $nb_default;
+		border-color: $nb_fontcolor_default;
+		color: $nb_fontcolor_default;
+		&:hover{
+			background-color: $nb_default_hv;
+			color: #fff;
+		}
+	}
+	&.alert-primary{
+		background-color: $nb_primary;
+		border-color: $nb_fontcolor_primary;
+		&:hover{
+			background-color: $nb_primary_hv;
+		}
+	}
+	&.alert-success{
+		background-color: $nb_success;
+		border-color: $nb_fontcolor_success;
+		&:hover{
+			background-color: $nb_success_hv;
+		}
+	}
+	&.alert-info{
+		background-color: $nb_info;
+		border-color: $nb_fontcolor_info;
+		&:hover{
+			background-color: $nb_info_hv;
+		}
+	}
+	&.alert-warning{
+		background-color: $nb_warning;
+		border-color: $nb_fontcolor_warning;
+		&:hover{
+			background-color: $nb_warning_hv;
+		}
+	}
+	&.alert-danger{
+		background-color: $nb_danger;
+		border-color: $nb_fontcolor_danger;
+		&:hover{
+			background-color: $nb_danger_hv;
+		}
+	}
+}
