@@ -1,0 +1,62 @@
+@import "../utils/colors";
+
+.btn{
+	width: auto;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 100;
+    border: 1px solid;
+    border-color: #ccc;
+    color: #fff;
+    cursor: pointer;
+	&.btn-default{
+		background-color: $nb_default;
+		color: $nb_fontcolor_default;
+		&:hover,&:focus,&:active{
+			color: #333;
+		    background-color: #e6e6e6;
+		    border-color: #adadad;
+		}	
+	}
+	&.btn-primary{
+		background-color: $nb_primary;
+		border-color: $nb_fontcolor_primary;
+		&:hover,&:focus,&:active{
+		    background-color: $nb_fontcolor_primary;
+		    border-color: $nb_primary;
+		}
+	}
+	&.btn-success{
+		background-color: $nb_success;
+		border-color: $nb_fontcolor_success;
+		&:hover,&:focus,&:active{
+			background-color: $nb_fontcolor_success;
+			border-color: $nb_success;
+		}
+	}
+	&.btn-info{
+		background-color: $nb_fontcolor_info;
+		border-color: $nb_info;
+		&:hover,&:focus,&:active{
+			background-color: $nb_info;
+			border-color: $nb_fontcolor_info;
+		}
+	}
+	&.btn-warning{
+		background-color: $nb_fontcolor_warning;
+		border-color: $nb_warning;
+		&:hover,&:focus,&:active{
+			background-color: $nb_warning;
+			border-color: $nb_fontcolor_warning;
+		}
+	}
+	&.btn-danger{
+		background-color: $nb_fontcolor_danger;
+		border-color: $nb_danger;
+		&:hover,&:focus,&:active{
+			background-color: $nb_danger;
+			border-color: $nb_fontcolor_danger;
+		}
+	}
+}
