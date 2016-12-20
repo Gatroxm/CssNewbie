@@ -1,4 +1,5 @@
 @import "../utils/colors";
+@import "../utils/resolutions";
 
 .btn{
 	width: auto;
@@ -10,20 +11,25 @@
     border-color: #ccc;
     color: #fff;
     cursor: pointer;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 	&.btn-default{
 		background-color: $nb_default;
 		color: $nb_fontcolor_default;
 		&:hover,&:focus,&:active{
 			color: #333;
-		    background-color: #e6e6e6;
+		    background-color: $nb_default_hv;
 		    border-color: #adadad;
-		}	
+		}
 	}
 	&.btn-primary{
 		background-color: $nb_primary;
 		border-color: $nb_fontcolor_primary;
 		&:hover,&:focus,&:active{
-		    background-color: $nb_fontcolor_primary;
+		    background-color: $nb_primary_hv;
 		    border-color: $nb_primary;
 		}
 	}
@@ -31,7 +37,7 @@
 		background-color: $nb_success;
 		border-color: $nb_fontcolor_success;
 		&:hover,&:focus,&:active{
-			background-color: $nb_fontcolor_success;
+			background-color: $nb_success_hv;
 			border-color: $nb_success;
 		}
 	}
@@ -39,7 +45,7 @@
 		background-color: $nb_fontcolor_info;
 		border-color: $nb_info;
 		&:hover,&:focus,&:active{
-			background-color: $nb_info;
+			background-color: $nb_info_hv;
 			border-color: $nb_fontcolor_info;
 		}
 	}
@@ -47,7 +53,7 @@
 		background-color: $nb_fontcolor_warning;
 		border-color: $nb_warning;
 		&:hover,&:focus,&:active{
-			background-color: $nb_warning;
+			background-color: $nb_warning_hv;
 			border-color: $nb_fontcolor_warning;
 		}
 	}
@@ -55,8 +61,15 @@
 		background-color: $nb_fontcolor_danger;
 		border-color: $nb_danger;
 		&:hover,&:focus,&:active{
-			background-color: $nb_danger;
+			background-color: $nv_danger_hv;
 			border-color: $nb_fontcolor_danger;
+		}
+	}
+	@media screen and (max-width: $movil){
+		&.btn{
+			display: block;
+			margin: 10px 0;
+			width: 100%;
 		}
 	}
 }
