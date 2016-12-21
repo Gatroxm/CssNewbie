@@ -1,5 +1,4 @@
-@import "../utils/colors";
-@import "../utils/resolutions";
+@import "../utils/variables";
 
 .alert{
 	width: 100%;
@@ -35,12 +34,18 @@
 		&:hover{
 			background-color: $nb_primary_hv;
 		}
+		a{
+			color: #fff;
+		}
 	}
 	&.alert-success{
 		background-color: $nb_success;
 		border-color: $nb_fontcolor_success;
 		&:hover{
 			background-color: $nb_success_hv;
+		}
+		a{
+			color: #fff;
 		}
 	}
 	&.alert-info{
@@ -49,12 +54,18 @@
 		&:hover{
 			background-color: $nb_info_hv;
 		}
+		a{
+			color: #fff;
+		}
 	}
 	&.alert-warning{
 		background-color: $nb_warning;
 		border-color: $nb_fontcolor_warning;
 		&:hover{
 			background-color: $nb_warning_hv;
+		}
+		a{
+			color: #fff;
 		}
 	}
 	&.alert-danger{
@@ -63,5 +74,27 @@
 		&:hover{
 			background-color: $nb_danger_hv;
 		}
+		a{
+			color: #fff;
+		}
 	}
+	ul{
+		margin: 10px 0;
+		padding-left: 15px;
+		li{
+			list-style-type: square;
+			font-family: $Roboto-Black;
+			margin: 0 10px;
+			a{
+				color: #000;
+				text-decoration: none;
+				&:hover,
+				&:focus,
+				&:active{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
 }

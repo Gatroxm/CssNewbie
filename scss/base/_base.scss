@@ -1,3 +1,4 @@
+@import "../utils/variables";
 body{
 	background-color: #000;
 	margin: 0;
@@ -5,4 +6,52 @@ body{
 }
 p{
 	margin: 10px auto;
+}
+.Roboto-Black{
+	font-family: $Roboto-Black;
+}
+.Roboto-BlackItalic{
+	font-family: $Roboto-BlackItalic;
+}
+.Roboto-Bold{
+	font-family: $Roboto-Bold;
+}
+.Roboto-BoldCondensed{
+	font-family: $Roboto-BoldCondensed;
+}
+.Roboto-BoldCondensedItalic{
+	font-family: $Roboto-BoldCondensedItalic;
+}
+.Roboto-BoldItalic{
+	font-family: $Roboto-BoldItalic;
+}
+.Roboto-Condensed{
+	font-family: $Roboto-Condensed;
+}
+.Roboto-CondensedItalic{
+	font-family: $Roboto-CondensedItalic;
+}
+.Roboto-Italic{
+	font-family: $Roboto-Italic;
+}
+.Roboto-Light{
+	font-family: $Roboto-Light;
+}
+.Roboto-LightItalic{
+	font-family: $Roboto-LightItalic;
+}
+.Roboto-Medium{
+	font-family: $Roboto-Medium;
+}
+.Roboto-MediumItalic{
+	font-family: $Roboto-MediumItalic;
+}
+.Roboto-Regular{
+	font-family: $Roboto-Regular;
+}
+.Roboto-Thin{
+	font-family: $Roboto-Thin;
+}
+.Roboto-ThinItalic{
+	font-family: $Roboto-ThinItalic;
 }
